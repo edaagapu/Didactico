@@ -11,12 +11,12 @@ public class Usuario {
 	/**
 	 * Atributo tipo String en el que se tendra el registro local del nombre del usuario
 	 */
-	private String nombre;
+	protected String nombre;
 	
 	/**
 	 * Atributo tipo String en el que se tendrá el registo del nickName del usuario
 	 */
-	private String nickName;
+	protected String nickName;
 	/**
 	 * Atributo tipo String en el que se tendra el registro local del APELLIDO
 	 del usuario
