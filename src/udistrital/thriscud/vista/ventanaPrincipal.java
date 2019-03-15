@@ -1,5 +1,4 @@
-package vista;
-
+package udistrital.thriscud.vista;
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
