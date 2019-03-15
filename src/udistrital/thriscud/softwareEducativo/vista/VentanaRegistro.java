@@ -1,4 +1,4 @@
-package udistrital.thriscud.vista;
+package udistrital.thriscud.softwareEducativo.vista;
 
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
