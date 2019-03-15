@@ -1,5 +1,4 @@
-package vista;
-
+package udistrital.thriscud.vista;
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
@@ -51,31 +50,37 @@ public class ventanaPrincipal {
 		JButton btnBotonmat = new JButton("");
 		btnBotonmat.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
+				ingresarMatematicas();
 			}
 		});
 		btnBotonmat.setIcon(new ImageIcon(ventanaPrincipal.class.getResource("/ElementosInterfaz/logoMat.png")));
 		btnBotonmat.setBounds(72, 264, 270, 250);
 		btnBotonmat.setContentAreaFilled(false);
+		btnBotonmat.setBorderPainted(false);
 		panelPrincipal.add(btnBotonmat);
 		
 		JButton btnBotonbio = new JButton("");
 		btnBotonbio.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				ingresarBiologia();
 			}
 		});
 		btnBotonbio.setIcon(new ImageIcon(ventanaPrincipal.class.getResource("/ElementosInterfaz/logoBio.png")));
 		btnBotonbio.setBounds(352, 264, 270, 250);
 		btnBotonbio.setContentAreaFilled(false);
+		btnBotonbio.setBorderPainted(false);
 		panelPrincipal.add(btnBotonbio);
 		
 		JButton btnBotoninf = new JButton("");
 		btnBotoninf.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				ingresarInformatica();
 			}
 		});
 		btnBotoninf.setIcon(new ImageIcon(ventanaPrincipal.class.getResource("/ElementosInterfaz/logInf.png")));
 		btnBotoninf.setBounds(643, 264, 270, 250);
 		btnBotoninf.setContentAreaFilled(false);
+		btnBotoninf.setBorderPainted(false);
 		panelPrincipal.add(btnBotoninf);
 		
 		JLabel lblTituloprograma = new JLabel("");
@@ -107,5 +112,20 @@ public class ventanaPrincipal {
 	private void anadirCaracteristicas(){
 		panelPrincipal.setBounds(0, 0, 984, 711);
 		frame.getContentPane().add(panelPrincipal);
+	}
+	/**Metodo del boton matematicas*/
+	public void ingresarMatematicas(){ 
+		VentanaMatematicas matematicas = new VentanaMatematicas(); //ESTO ES MACHETAZO, ES PARA QUE VEAN COMO FUNCIONA LA NAVEGACION DE LA APLICACION 
+		matematicas.main(null);
+	}
+	/**Metodo del boton biologia*/
+	public void ingresarBiologia(){
+		VentanaBiologia biologia = new VentanaBiologia(); //ESTO ES MACHETAZO, ES PARA QUE VEAN COMO FUNCIONA LA NAVEGACION DE LA APLICACION 
+		biologia.main(null);
+		
+	}
+	/**Metodo del boton informatica*/
+	public void ingresarInformatica(){
+		
 	}
 }
